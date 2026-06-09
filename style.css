@@ -111,9 +111,16 @@ h2 {
 .project {
     padding: 20px;
     background-color: #f4f4f4;
-    margin: 20px 0;
     border-radius: 10px;
-    border: 2px solid #c5b7b7b5
+    border: 2px solid #c5b7b7b5;
+    height: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 h3 {
@@ -159,4 +166,15 @@ h3 {
 .projects a:hover {
     color: #3111ff;
     text-decoration: underline;
+}
+
+.contact form button:hover {
+    background-color: #2400cc;
+}
+
+@media (max-width: 720px) {
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+    }
 }
